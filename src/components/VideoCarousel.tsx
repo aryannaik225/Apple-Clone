@@ -8,7 +8,7 @@ import { hightlightsSlides } from "../constants";
 import { pauseImg, playImg, replayImg } from "../utils";
 
 const VideoCarousel = () => {
-  const videoRef = useRef([]);
+  const videoRef = useRef<HTMLVideoElement[]>([]);
   const videoSpanRef = useRef([]);
   const videoDivRef = useRef([]);
 
@@ -170,11 +170,11 @@ const VideoCarousel = () => {
                   } pointer-events-none`}
                   preload="auto"
                   muted
-                  ref={(el) => (videoRef.current[i] = el)}
+                  ref={(el) => (videoRef.current[i] = el!)}
                   onEnded={() =>
                     i !== 3
                       ? handleProcess("video-end", i)
-                      : handleProcess("video-last")
+                      : handleProcess("video-last", i)
                   }
                   onPlay={() =>
                     setVideo((pre) => ({ ...pre, isPlaying: true }))
