@@ -93,6 +93,6 @@ export const sizes = [
 export const footerLinks = [
   { name: "Privacy Policy", url: "/privacy-policy" },
   { name: "Terms of Use", url: "/termsofuse" },
-  { name: "GitHub", url: "https://www.github.com/aryannaik225" },
+  { name: "GitHub", url: "https://www.github.com/aryannaik225/Apple-Clone" },
   { name: "Instagram", url: "https://www.instagram.com/aryannaik225" },
 ];
