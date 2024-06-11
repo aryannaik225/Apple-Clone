@@ -5,7 +5,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 
 const Features = () => {
-  const videoRef = useRef();
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useGSAP(() => {
     gsap.to("#exploreVideo", {
@@ -15,7 +15,9 @@ const Features = () => {
         start: "-10% bottom",
       },
       onComplete: () => {
-        videoRef.current.play();
+        if (videoRef.current) {
+          videoRef.current.play();
+        }
       },
     });
 

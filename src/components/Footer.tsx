@@ -22,18 +22,20 @@ const Footer = () => {
               Copyright @ 2024 Apple Inc. All rights reserved.
             </p>
             <div className="flex">
-              {footerLinks.map((link, i) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  className="font-semibold text-gray text-xs hover:text-blue cursor-pointer"
-                >
-                  {link.name}
-                  {i !== footerLinks.length - 1 && (
-                    <span className="mx-2"> | </span>
-                  )}
-                </a>
-              ))}
+              {footerLinks.map(
+                (link: { name: string; url: string }, i: number) => (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    className="font-semibold text-gray text-xs hover:text-blue cursor-pointer"
+                  >
+                    {link.name}
+                    {i !== footerLinks.length - 1 && (
+                      <span className="mx-2"> | </span>
+                    )}
+                  </a>
+                )
+              )}
             </div>
           </div>
         </div>
