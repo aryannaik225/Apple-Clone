@@ -5,6 +5,7 @@ import Model from "./components/Model";
 import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
+import Camera from "./components/Camera";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Model />
       <Features />
       <HowItWorks />
+      <Camera />
       <Footer />
     </main>
   );

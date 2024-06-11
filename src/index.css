@@ -29,6 +29,10 @@ canvas {
   max-width: 1300px;
 }
 
+.increase-line-height {
+  line-height: 15px;
+}
+
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center;

@@ -68,7 +68,7 @@ const Features = () => {
             </div>
 
             <div className="flex flex-col w-full relative">
-              <div className="feature=video-container">
+              <div className="feature-video-container">
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
                     src={explore1Img}
