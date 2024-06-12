@@ -103,19 +103,19 @@ canvas {
   }
 
   .hiw-video {
-    @apply absolute w-[95%] h-[90%] rounded-[56px] overflow-hidden
+    @apply absolute w-[95%] h-[90%] rounded-[15px] md:rounded-[56px] overflow-hidden
   }
 
   .hiw-text-container {
-    @apply flex md:flex-row flex-col justify-between items-start gap-24 px-24
+    @apply flex md:flex-row flex-col justify-between items-start gap-24 lg:px-24
   }
 
   .hiw-text {
-    @apply text-gray text-xl font-normal md:font-semibold px-12
+    @apply text-gray text-xl font-normal md:font-semibold lg:px-12
   }
 
   .hiw-bigtext {
-    @apply text-white text-3xl md:text-5xl font-normal md:font-semibold my-2 px-12
+    @apply text-white text-3xl md:text-5xl font-normal md:font-semibold my-2 lg:px-12
   }
 
   .video-carousel_container {

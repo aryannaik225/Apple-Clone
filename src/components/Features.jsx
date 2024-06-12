@@ -35,12 +35,12 @@ const Features = () => {
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
       <div className="screen-max-wdith">
         <div className="mb-12 w-full">
-          <h1 id="features_title" className="text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20 ml-80">Explore the full story.</h1>
+          <h1 id="features_title" className="text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20">Explore the full story.</h1>
         </div>
         {/* justify center and items center here */}
         <div className="flex flex-col justify-center items-center overflow-hidden">
           {/* pl-24 was changed to p-20 */}
-          <div className="mt-32 mb-24 pr-96">
+          <div className="mt-16 mb-24 pl-16 lg:mt-32">
             <h2 className="text-5xl lg:text-7xl font-semibold">iPhone.</h2>
             <h2 className="text-5xl lg:text-7xl font-semibold">Forged in titanium.</h2>
           </div>
